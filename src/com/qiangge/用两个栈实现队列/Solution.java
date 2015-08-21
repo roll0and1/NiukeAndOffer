@@ -1,4 +1,4 @@
-package com.qiangge.twoStacksImplementQueue;
+package com.qiangge.用两个栈实现队列;
 
 import java.util.Stack;
 

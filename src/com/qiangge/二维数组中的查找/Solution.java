@@ -1,4 +1,4 @@
-package com.qiangge.findInMatrix;
+package com.qiangge.二维数组中的查找;
 
 public class Solution {
 	/**

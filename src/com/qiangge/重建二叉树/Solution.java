@@ -1,4 +1,4 @@
-package com.qiangge.reConstructBinaryTree;
+package com.qiangge.重建二叉树;
 
 class TreeNode {
 	int val;

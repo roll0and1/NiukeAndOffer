@@ -1,4 +1,4 @@
-package com.qiangge.printListFromTailToHead;
+package com.qiangge.从尾到头打印链表;
 
 import java.util.ArrayList;
 
