@@ -51,8 +51,9 @@ public class Solution {
 		TreeNode rootNode = new TreeNode(rootValue);
 		rootNode.left = null;
 		rootNode.right = null;
+		// 递归出口
 		if (preStart == preEnd) {
-			if (inStart == inEnd && pre[preEnd] == in[inEnd]) { //youyiwen
+			if (inStart == inEnd && pre[preEnd] == in[inEnd]) { // youyiwen
 				return rootNode;
 			} else {
 				System.out.println("invalid input");
@@ -67,6 +68,7 @@ public class Solution {
 				break;
 			}
 		}
+		// 统计左右子树长度
 		int leftTreeLength = index - inStart;
 		int rightTreeLength = inEnd - index;
 		if (leftTreeLength > 0) {
