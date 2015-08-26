@@ -19,6 +19,24 @@ public class Solution {
 		}
 		return total;
 	}
+	public int NumberOf0Between1AndN_Solution(int n) {
+		int total = 0;
+		if (n < 0) {
+			return total;
+		}
+		// 从1开始遍历 分别计算每个数里1出现的个数
+		for (int i = 1; i <= n; i++) {
+			int j = i;
+			while (j != 0) {
+				if (j % 10 == 0) {
+					total++;
+					break;
+				}
+				j /= 10;
+			}
+		}
+		return total;
+	}
 	public int NumberOf1Between1AndN_Solution1(int n) {
 		int total=0;
 		int temp=n;
@@ -57,9 +75,10 @@ public class Solution {
 	}
 	public static void main(String[] args) {
 		Solution solution = new Solution();
-		int x = solution.NumberOf1Between1AndN_Solution(1234);
-		int y = solution.NumberOf1Between1AndN_Solution1(88888);
-		System.out.println(x);
+//		int x = solution.NumberOf1Between1AndN_Solution(1234);
+//		int y = solution.NumberOf1Between1AndN_Solution1(88888);
+		int y = solution.NumberOf1Between1AndN_Solution1(1000);
+//		System.out.println(x);
 		System.out.println(y);
 	}
 }
