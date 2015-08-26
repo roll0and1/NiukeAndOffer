@@ -32,7 +32,6 @@ public class Solution {
 		// 从1开始遍历 分别计算每个数里1出现的个数
 		for (int i = 1; i <= n; i++) {
 			int j = i;
-			boolean flag = true;
 			while (j != 0) {
 				if (j % 10 == 0) {
 					total++;
